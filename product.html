@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        /* 구글 폰트 */
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400&display=swap');
+
+        body {
+            font-family: 'Noto Sans KR';
+            font-weight: 600;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        #logo {
+            height: 30px;
+        }
+
+        .font-bk-sans {
+            font-family: 'Black Han Sans';
+            font-size: 4em;
+        }
+
+        #wrapper.container-fluid {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        #wrapper {
+            position: fixed;
+            z-index: 100;
+        }
+
+        #mainContents03 {
+            background: url(img/carousel1.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 300px;
+            position: relative;
+        }
+
+        .carousel {
+            position: relative;
+            top: 58px;
+        }
+
+        #mainContents03::before {
+            content: " ";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 225, 159);
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0.5;
+            z-index: 1;
+        }
+
+        #mainContents03 p,
+        #mainContents03 h2 {
+            position: relative;
+            z-index: 99;
+        }
+
+        #leftCarousel .carousel-item img {
+            height: 800px;
+            position: absolute;
+            left: 25%;
+        }
+
+        #carouselExampleSlidesOnly img {
+            background-size: cover;
+        }
+
+        #leftCarousel .col:ntn-of-type(1) {
+            overflow: hidden;
+        }
+
+        .divider:after,
+        .divider:before {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #eee;
+        }
+
+        .modal-content {
+            width: 700px;
+            height: 1000px;
+        }
+
+        .m0auto {
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            left: -5%;
+        }
+
+        .btn {
+            color: white;
+        }
+
+        .btn:hover {
+            color: white;
+        }
+
+        .pt-100 {
+            padding-top: 100px;
+        }
+
+        .radius {
+            border-radius: 30px 0 0 100px;
+        }
+
+        .mx-0 {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .inline {
+            display: inline;
+        }
+
+        .t {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .border-radius {
+            border-radius: 20px;
+        }
+
+        .container .row ul li {
+            list-style: none;
+        }
+
+        .jc {
+            justify-content: space-around
+        }
+
+        .img-rrounded {
+            border-radius: 20px;
+        }
+
+        .footer {
+            background-color: rgb(216, 216, 216);
+            color: grey;
+        }
+
+        .footer .n a {
+            text-decoration: none;
+            color: rgb(83, 83, 83);
+        }
+
+        .footer .n .hover:hover {
+            color: #ffc021;
+        }
+
+        .footer .after::after {
+            content: " | ";
+        }
+
+        .text {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer .n .fs::after {
+            content: "+";
+        }
+
+        .footer .n .fs:hover::after {
+            color: #ffc021;
+        }
+
+        .tar {
+            display: flex;
+        }
+
+        .d-flex {
+            justify-content: space-between;
+        }
+
+        .img-circle {
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        @media(max-width : 768px) {
+            .navbar-brand {
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+
+        .radius-r {
+            border-radius: 0 30px 100px 0;
+        }
+
+        .text-aria {
+            text-align: center;
+            padding-top: 150px;
+        }
+
+        .title {
+            font-weight: bold;
+        }
+
+        .mt-100 {
+            margin-top: 100px;
+        }
+
+        .h-0 {
+            height: 0;
+        }
+
+        .img-size {
+            width: 15px;
+            height: 15px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .text-color {
+            color: grey;
+        }
+
+        .line-height {
+            line-height: 40px;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        a:hover {
+            color: #ffd15d;
+            text-decoration: none;
+        }
+
+        .btn-secondary:hover {
+            border: #ffd15d 1px solid;
+            background-color: #ffd15d;
+        }
+
+        .text-align-right {
+            text-align: right;
+            justify-content: end;
+            float: right;
+        }
+
+        .inline {
+            display: inlcircle
+        }
+
+        .round {
+            border-radius: 20px;
+        }
+
+        .day::after {
+            content: "2023-00-00";
+            float: right;
+            justify-content: end;
+            text-align: right;
+            color: grey;
+        }
+
+        .day:hover::after {
+            color: #ffd15d;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+
+        .tac {
+            align-items: center;
+        }
+
+        .pt-75 {
+            padding-top: 75px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="col-12 px-0" id="wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <a class="navbar-brand" href="/index.html"><img src="img/emart24/logo.png" class="mx-auto logo"
+                        id="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto mx-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                상품
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/subpage/sub1.html">행사상품</a>
+                                <a class="dropdown-item" href="#">차별화 상품</a>
+                                <a class="dropdown-item" href="#">Fresh Food</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                매장찾기
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">매장찾기</a>
+                                <a class="dropdown-item" href="#">3D 매장 체험</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                서비스
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">APP 서비스</a>
+                                <a class="dropdown-item" href="#">생활서비스</a>
+                                <a class="dropdown-item" href="#">제휴 서비스</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                이벤트
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">진행중인 이벤트</a>
+                                <a class="dropdown-item" href="#">종료된 이벤트</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                창업안내
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">이마트24특징</a>
+                                <a class="dropdown-item" href="#">창업 가이드</a>
+                                <a class="dropdown-item" href="#">창업 설명회</a>
+                                <a class="dropdown-item" href="#">창업 성공기</a>
+                                <a class="dropdown-item" href="#">창업 상담</a>
+                                <a class="dropdown-item" href="#">추천 매장 소개</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+                            Log in
+                        </button>
+                    </form>
+                </div>
+            </nav>
+        </div><!-- col -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  m0auto">
+                <div class="modal-content m0auto">
+                    <section class="vh-100">
+                        <div class="container h-100">
+                            <div class="row d-flex align-items-center justify-content-center py-3">
+                                <div class="col-12">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="col-12 py-5">
+                                    <img src="img/carousel1.png" class="w-100" alt="Phone image">
+                                </div>
+                                <div class="col-md-12 col-lg-12 col-xl-12">
+                                    <form>
+                                        <!-- Email input -->
+                                        <div class="form-outline mb-4">
+                                            <input type="email" id="form1Example13"
+                                                class="form-control form-control-lg" />
+                                            <label class="form-label" for="form1Example13">Email address</label>
+                                        </div>
+
+                                        <!-- Password input -->
+                                        <div class="form-outline mb-4">
+                                            <input type="password" id="form1Example23"
+                                                class="form-control form-control-lg" />
+                                            <label class="form-label" for="form1Example23">Password</label>
+                                        </div>
+
+                                        <div class="d-flex justify-content-around align-items-center mb-4">
+                                            <!-- Checkbox -->
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="form1Example3" checked />
+                                                <label class="form-check-label" for="form1Example3"> Remember me
+                                                </label>
+                                            </div>
+                                            <a href="#!">Forgot password?</a>
+                                        </div>
+
+                                        <!-- Submit button -->
+                                        <button type="submit" class="btn btn-warning btn-lg btn-block">Sign
+                                            in</button>
+
+                                        <div class="divider d-flex align-items-center my-4">
+                                            <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+                                        </div>
+
+                                        <a class="btn btn-lg btn-block" style="background-color: #DAA520" href="#!"
+                                            role="button">
+                                            <i class="fab fa-facebook-f me-2"></i>Continue with Facebook
+                                        </a>
+                                        <a class="btn btn-lg btn-block" style="background-color: #ffff97" href="#!"
+                                            role="button">
+                                            <i class="fab fa-twitter me-2"></i>Continue with Twitter</a>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark pt-75">
+            <p class="navbar-brand tac">상품</p>
+
+            <div class="tar tac">
+                <a class="navbar-brand" href="#">행사상품</a>
+                <a class="navbar-brand" href="#">차별화 상품</a>
+                <a class="navbar-brand" href="#">Fresh Food</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h1 class="font-bk-sans">행사 상품</h1>
+            <p class="text-color">이마트24가 준비한 이달의 행사상품을 만나보세요.</p>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2 col-10" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-warning my-2 my-sm-0 tar" type="submit">Search</button>
+            </form>
+            <div class="mt-100"></div>
+
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-warning active">
+                    <input type="radio" name="options" id="option1" checked> 전체
+                </label>
+                <label class="btn btn-warning">
+                    <input type="radio" name="options" id="option2"> 1+1
+                </label>
+                <label class="btn btn-warning">
+                    <input type="radio" name="options" id="option3"> 2+1
+                </label>
+                <label class="btn btn-warning">
+                    <input type="radio" name="options" id="option3"> 3+1
+                </label>
+                <label class="btn btn-warning">
+                    <input type="radio" name="options" id="option3"> 세일
+                </label>
+                <label class="btn btn-warning">
+                    <input type="radio" name="options" id="option3"> 덤증정
+                </label>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
