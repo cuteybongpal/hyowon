@@ -35,8 +35,7 @@
             font-size: 4em;
         }
 
-        #wrapper.container-fluid {
-            position: relative;
+        .container-fluid#wrapper {
             top: 0;
             left: 0;
         }
@@ -44,6 +43,7 @@
         #wrapper {
             position: fixed;
             z-index: 100;
+            top: 0;
         }
 
         #mainContents03 {
@@ -299,6 +299,27 @@
         .pt-75 {
             padding-top: 75px;
         }
+
+        .h-78{
+            height: 78px;
+        }
+        body{
+            padding-top: 80px;
+        }
+        .raadius{
+            border-radius: 10px 10px 5px 10px;
+        }
+        .btn-outline-warning:hover{
+            color: black;
+        }
+        .text-color{
+            color: black;
+        }
+
+
+        .btn, .btn:hover{
+            color: black;
+        }
     </style>
 </head>
 
@@ -447,47 +468,59 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-dark bg-dark pt-75">
-            <p class="navbar-brand tac">상품</p>
-
-            <div class="tar tac">
-                <a class="navbar-brand" href="#">행사상품</a>
-                <a class="navbar-brand" href="#">차별화 상품</a>
-                <a class="navbar-brand" href="#">Fresh Food</a>
-            </div>
-        </nav>
-
-        <div class="container">
-            <h1 class="font-bk-sans">행사 상품</h1>
-            <p class="text-color">이마트24가 준비한 이달의 행사상품을 만나보세요.</p>
-            <form class="form-inline">
-                <input class="form-control mr-sm-2 col-10" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-warning my-2 my-sm-0 tar" type="submit">Search</button>
-            </form>
-            <div class="mt-100"></div>
-
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-warning active">
-                    <input type="radio" name="options" id="option1" checked> 전체
-                </label>
-                <label class="btn btn-warning">
-                    <input type="radio" name="options" id="option2"> 1+1
-                </label>
-                <label class="btn btn-warning">
-                    <input type="radio" name="options" id="option3"> 2+1
-                </label>
-                <label class="btn btn-warning">
-                    <input type="radio" name="options" id="option3"> 3+1
-                </label>
-                <label class="btn btn-warning">
-                    <input type="radio" name="options" id="option3"> 세일
-                </label>
-                <label class="btn btn-warning">
-                    <input type="radio" name="options" id="option3"> 덤증정
-                </label>
-            </div>
-        </div>
     </div>
+    <nav class="navbar navbar-dark bg-dark h-78">
+        <p class="navbar-brand tac">상품</p>
+
+        <div class="">
+            <a class="navbar-brand" href="#">행사상품</a>
+            <a class="navbar-brand" href="#">차별화 상품</a>
+            <a class="navbar-brand" href="#">Fresh Food</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="font-bk-sans">행사 상품</h1>
+        <p class="text-color">이마트24가 준비한 이달의 행사상품을 만나보세요.</p>
+        <form class="form-inline row">
+            <input class="form-control mr-sm-2 col-11" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-warning my-2 my-sm-0 text-align-right" type="submit">Search</button>
+        </form>
+        <div class="mt-3"></div>
+        <div class="btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-outline-warning text-color active mx-2 raadius">
+                <input type="radio" name="options" id="option1" checked> 전체
+            </label>
+            <label class="btn btn-outline-warning text-color mx-2 raadius">
+                <input type="radio" name="options" id="option2"> 1+1
+            </label>
+            <label class="btn btn-outline-warning text-color mx-2 raadius">
+                <input type="radio" name="options" id="option3"> 2+1
+            </label>
+            <label class="btn btn-outline-warning text-color mx-2 raadius">
+                <input type="radio" name="options" id="option3"> 3+1
+            </label>
+            <label class="btn btn-outline-warning text-color mx-2 raadius">
+                <input type="radio" name="options" id="option3"> 세일
+            </label>
+            <label class="btn btn-outline-warning text-color mx-2 raadius">
+                <input type="radio" name="options" id="option3"> 덤증정
+            </label>
+            <div class="dropdown text-align-right">
+                <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                  Dropdown button
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+        </div>
+        <div class="mt-3"></div>
+
+        d
+    </div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
