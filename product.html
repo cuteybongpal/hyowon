@@ -9,8 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="icon" href="img/emart24/favicon.ico">
 
-    <title>Hello, world!</title>
+    <title>행사 상품 - 이마트24</title>
     <style>
         /* 구글 폰트 */
         @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
@@ -19,6 +20,7 @@
         body {
             font-family: 'Noto Sans KR';
             font-weight: 600;
+            background-color: rgb(252, 252, 252);
         }
 
         * {
@@ -293,6 +295,8 @@
         }
 
         .tac {
+            text-align: center;
+            justify-content: center;
             align-items: center;
         }
 
@@ -300,25 +304,45 @@
             padding-top: 75px;
         }
 
-        .h-78{
+        .h-78 {
             height: 78px;
         }
-        body{
+
+        body {
             padding-top: 80px;
         }
-        .raadius{
+
+        .raadius {
             border-radius: 10px 10px 5px 10px;
         }
-        .btn-outline-warning:hover{
+
+        .btn-outline-warning:hover {
             color: black;
         }
-        .text-color{
+
+        .btn-outline-warning {
+            color: black;
+            background-color: white;
+        }
+
+        .text-color {
             color: black;
         }
 
 
-        .btn, .btn:hover{
+        .btn,
+        .btn:hover {
             color: black;
+        }
+
+        .img-size-200 {
+            width: 200px;
+            height: 200px;
+
+        }
+
+        .border-lightgrey {
+            border: 1px solid rgb(197, 197, 197);
         }
     </style>
 </head>
@@ -342,19 +366,17 @@
                                 상품
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="/subpage/sub1.html">행사상품</a>
-                                <a class="dropdown-item" href="#">차별화 상품</a>
-                                <a class="dropdown-item" href="#">Fresh Food</a>
+                                <a class="dropdown-item" href="product.html">행사상품</a>
+                                <a class="dropdown-item" href="product.html">차별화 상품</a>
+                                <a class="dropdown-item" href="product.html">Fresh Food</a>
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown disable">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                                 aria-expanded="false">
                                 매장찾기
                             </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">매장찾기</a>
-                                <a class="dropdown-item" href="#">3D 매장 체험</a>
+                            <div class="dropdown-menu disable">
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -362,34 +384,23 @@
                                 aria-expanded="false">
                                 서비스
                             </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">APP 서비스</a>
-                                <a class="dropdown-item" href="#">생활서비스</a>
-                                <a class="dropdown-item" href="#">제휴 서비스</a>
+                            <div class="dropdown-menu disable">
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown disable">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                                 aria-expanded="false">
                                 이벤트
                             </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">진행중인 이벤트</a>
-                                <a class="dropdown-item" href="#">종료된 이벤트</a>
+                            <div class="dropdown-menu disable">
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown disable">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                                 aria-expanded="false">
                                 창업안내
                             </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">이마트24특징</a>
-                                <a class="dropdown-item" href="#">창업 가이드</a>
-                                <a class="dropdown-item" href="#">창업 설명회</a>
-                                <a class="dropdown-item" href="#">창업 성공기</a>
-                                <a class="dropdown-item" href="#">창업 상담</a>
-                                <a class="dropdown-item" href="#">추천 매장 소개</a>
+                            <div class="dropdown-menu disable">
                             </div>
                         </li>
                     </ul>
@@ -506,23 +517,366 @@
                 <input type="radio" name="options" id="option3"> 덤증정
             </label>
             <div class="dropdown text-align-right">
-                <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                  Dropdown button
+                <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="true">
+
                 </button>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">최신순</a>
+                    <a class="dropdown-item" href="#">가격 낮은 순</a>
+                    <a class="dropdown-item" href="#">가격 높은 순</a>
+                    <a class="dropdown-item" href="#">인기순</a>
                 </div>
-              </div>
+            </div>
         </div>
         <div class="mt-3"></div>
-
-        d
+        <div class="row">
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 p-2">
+                <div class="tac border-lightgrey rounded shadow bg-white">
+                    <img src="img/emart24/product1.png" class="img-size-200 img-fluid" alt="">
+                    <hr>
+                    <p>페브리즈)차량용 맑은 바람</p>
+                    <p>8,500 원</p>
+                </div>
+            </div>
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination tac">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </div>
 
+    <div class="container-fluid mt-100 footer mx-0">
+        <div class="n">
+            <div class="text pt-2">
+                <div>
+                    <a href="#" class="after hover">&nbsp;&nbsp;개인정보 처리방침&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a href="#" class="after hover">&nbsp;&nbsp;&nbsp;&nbsp;이용약관&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a href="#" class="after hover">&nbsp;&nbsp;&nbsp;&nbsp;고객센터&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a href="#" class="after hover">&nbsp;&nbsp;&nbsp;&nbsp;CSR경영&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a href="#" class=" hover">&nbsp;&nbsp;&nbsp;&nbsp;사이드맵&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </div>
+                <a href="#" class="fs">패밀리사이트</a>
+            </div>
 
+            <div class="mt-5 d-flex">
+                (주) 이마트24
 
+                <div class="tar">
+                    <div class="shortcut">
+                        <img src="img/emart24/shortcut1.png" class="img-fluid img-circle" alt="">
+                    </div>
+                    <div class="shortcut">
+                        <img src="img/emart24/shortcut2.png" class="img-fluid img-circle" alt="">
+                    </div>
+                    <div class="shortcut">
+                        <img src="img/emart24/shortcut3.png" class="img-fluid img-circle" alt="">
+                    </div>
+                    <div class="shortcut">
+                        <img src="img/emart24/shortcut4.png" class="img-fluid img-circle" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 pb-5 ">
+                <P>대표이사: 한채양 / 사업자등록번호: 105-86-92454<br>
+                    서울특별시 성동구 성수동 2가 281-4 푸조비즈타워 / 고객센터: 02-6916-1500 / Fax: 02-6916-1430 <br>
+                    COPYRIGHT (C) EMART24.ALL RIGHT RESERVED
+                </P>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

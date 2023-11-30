@@ -9,7 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <title>Hello, world!</title>
+    <title>홈 - 이마트24</title>
+    <link rel="icon" href="img/emart24/favicon.ico">
     <style>
         /* 구글 폰트 */
         @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
@@ -268,24 +269,30 @@
         }
 
         .inline {
-            display: inlcircle }
-        .round{
+            display: inlcircle
+        }
+
+        .round {
             border-radius: 20px;
         }
-        .day::after{
+
+        .day::after {
             content: "2023-00-00";
             float: right;
             justify-content: end;
             text-align: right;
             color: grey;
         }
-        .day:hover::after{
+
+        .day:hover::after {
             color: #ffd15d;
         }
-        .inline-block{
+
+        .inline-block {
             display: inline-block;
         }
-        .text-small{
+
+        .text-small {
             font-size: 13px;
         }
     </style>
@@ -297,7 +304,8 @@
             <!-- 네브바 -->
             <div class="col-12 px-0" id="wrapper">
                 <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                    <a class="navbar-brand" href="index.html"><img src="img/emart24/logo.png" class="mx-auto logo" id="logo"></a>
+                    <a class="navbar-brand" href="index.html"><img src="img/emart24/logo.png" class="mx-auto logo"
+                            id="logo"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -306,59 +314,46 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto mx-auto">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a class="nav-link active list-group-item-action" href="#nav-item-1" role="button"
+                                    data-toggle="dropdown" aria-expanded="false">
                                     상품
                                 </a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="product.html">행사상품</a>
-                                    <a class="dropdown-item" href="#">차별화 상품</a>
-                                    <a class="dropdown-item" href="#">Fresh Food</a>
+                                    <a class="dropdown-item" href="product.html">차별화 상품</a>
+                                    <a class="dropdown-item" href="product.html">Fresh Food</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle list-group-item-action" href="#nav-item-2"
+                                    role="button" data-toggle="dropdown" aria-expanded="false">
                                     매장찾기
                                 </a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">매장찾기</a>
-                                    <a class="dropdown-item" href="#">3D 매장 체험</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle list-group-item-action" href="#nav-item-3"
+                                    role="button" data-toggle="dropdown" aria-expanded="false">
                                     서비스
                                 </a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">APP 서비스</a>
-                                    <a class="dropdown-item" href="#">생활서비스</a>
-                                    <a class="dropdown-item" href="#">제휴 서비스</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle list-group-item-action" href="#" role="button"
+                                    data-toggle="dropdown" aria-expanded="false">
                                     이벤트
                                 </a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">진행중인 이벤트</a>
-                                    <a class="dropdown-item" href="#">종료된 이벤트</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle list-group-item-action" href="#nav-item-4"
+                                    role="button" data-toggle="dropdown" aria-expanded="false">
                                     창업안내
                                 </a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">이마트24특징</a>
-                                    <a class="dropdown-item" href="#">창업 가이드</a>
-                                    <a class="dropdown-item" href="#">창업 설명회</a>
-                                    <a class="dropdown-item" href="#">창업 성공기</a>
-                                    <a class="dropdown-item" href="#">창업 상담</a>
-                                    <a class="dropdown-item" href="#">추천 매장 소개</a>
                                 </div>
                             </li>
                         </ul>
@@ -460,367 +455,369 @@
                 </div><!-- col -->
             </div><!-- row -->
         </div>
-        <div class="row mt-100">
-            <div class="col-3">
-                <h1>11월 행사상품</h1>
-                <p>전체보기 <a href="#"><img src="img/emart24/more.png" class="img-size"></a></p>
-                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <button class="nav-link active" id="v-pills-home-tab" data-toggle="pill" data-target="#v-pills-home"
-                        type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">1+1</button>
-                    <button class="nav-link" id="v-pills-profile-tab" data-toggle="pill" data-target="#v-pills-profile"
-                        type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">2+1</button>
-                    <button class="nav-link" id="v-pills-messages-tab" data-toggle="pill"
-                        data-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-                        aria-selected="false">신상품</button>
-                </div>
-            </div>
-            <div class="col-9">
-                <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                        aria-labelledby="v-pills-home-tab">
-                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                                            <img src="img/emart24/1.png" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none d-md-block">
-                                            <img src="img/emart24/2.png" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div
-                                            class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-block">
-                                            <img src="img/emart24/3.png" class="d-block w-100 " alt="...">
-                                        </div>
-                                        <div
-                                            class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-none d-xl-block">
-                                            <img src="img/emart24/4.png" class="d-block w-100" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                                            <img src="img/emart24/sss.png" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none d-md-block">
-                                            <img src="img/emart24/5.png" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div
-                                            class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-block">
-                                            <img src="img/emart24/6.png" class="d-block w-100 " alt="...">
-                                        </div>
-                                        <div
-                                            class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-none d-xl-block">
-                                            <img src="img/emart24/7.png" class="d-block w-100" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                        aria-labelledby="v-pills-profile-tab">
-                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                                            <img src="img/emart24/1.png" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none d-md-block">
-                                            <img src="img/emart24/2.png" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div
-                                            class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-block">
-                                            <img src="img/emart24/3.png" class="d-block w-100 " alt="...">
-                                        </div>
-                                        <div
-                                            class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-none d-xl-block">
-                                            <img src="img/emart24/4.png" class="d-block w-100" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                                            <img src="img/emart24/sss.png" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none d-md-block">
-                                            <img src="img/emart24/5.png" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div
-                                            class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-block">
-                                            <img src="img/emart24/6.png" class="d-block w-100 " alt="...">
-                                        </div>
-                                        <div
-                                            class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-none d-xl-block">
-                                            <img src="img/emart24/7.png" class="d-block w-100" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                        aria-labelledby="v-pills-messages-tab">
-                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                                            <img src="img/emart24/1.png" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none d-md-block">
-                                            <img src="img/emart24/2.png" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div
-                                            class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-block">
-                                            <img src="img/emart24/3.png" class="d-block w-100 " alt="...">
-                                        </div>
-                                        <div
-                                            class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-none d-xl-block">
-                                            <img src="img/emart24/4.png" class="d-block w-100" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                                            <img src="img/emart24/sss.png" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none d-md-block">
-                                            <img src="img/emart24/5.png" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div
-                                            class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-block">
-                                            <img src="img/emart24/6.png" class="d-block w-100 " alt="...">
-                                        </div>
-                                        <div
-                                            class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-none d-xl-block">
-                                            <img src="img/emart24/7.png" class="d-block w-100" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- col-9 -->
-        </div>
-
-        <div class="container-fluid mx-0 mt-100">
-            <div class="row">
-                <div class="col-lg-0 col-xl-1"></div>
-                <div class="col-lg-12 col-xl-11 bg-warning radius mx-0 px-5">
-                    <h1 class="font-bk-sans pt-100 ">창업 안내</h1>
-                    <p>이마트24의 스마트한 창업설계를 받아보세요</p>
-                    <div class="row">
-                        <div class="col-sm-12 col-md-4   p-5">
-                            <div class="p-4 bg-white border-radius">
-                                <div class="t">
-                                    <h2 class="inline">창업가이드</h2>
-                                    <img src="img/emart24/circleArrows.png" width="50px" height=" 50px">
-                                </div>
-                                <p>이마트24는 경영주님과 <br>협력적 가치를 공유합니다.</p>
-                                <img src="img/emart24/idea.png" class="img-fluid rounded">
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-4   p-5">
-                            <div class="p-4 bg-white border-radius">
-                                <div class="t">
-                                    <h2 class="inline">창업설명회</h2>
-                                    <img src="img/emart24/circleArrows.png" width="50px" height=" 50px">
-                                </div>
-                                <p>경영주와 함께하는<br>창업 설명회를 신청하세요.</p>
-                                <img src="img/emart24/calenderCoin3d.png" class="img-fluid ">
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-4   p-5">
-                            <div class="p-4 bg-white border-radius">
-                                <div class="t">
-                                    <h2 class="inline">창업 상담</h2>
-                                    <img src="img/emart24/circleArrows.png" width="50px" height=" 50px">
-                                </div>
-                                <p>창업 전문 컨설턴트에<br>상담을 받아보세요.</p>
-                                <img src="img/emart24/chatBubble.png" class="img-fluid rounded">
-                            </div>
-                        </div>
+        <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+            <div class="row mt-100">
+                <div class="col-3">
+                    <h1 id="#nav-item-1">11월 행사상품</h1>
+                    <p>전체보기 <a href="#"><img src="img/emart24/more.png" class="img-size"></a></p>
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-home-tab" data-toggle="pill"
+                            data-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                            aria-selected="true">1+1</button>
+                        <button class="nav-link" id="v-pills-profile-tab" data-toggle="pill"
+                            data-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="false">2+1</button>
+                        <button class="nav-link" id="v-pills-messages-tab" data-toggle="pill"
+                            data-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                            aria-selected="false">신상품</button>
                     </div>
                 </div>
+                <div class="col-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                                <img src="img/emart24/1.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none d-md-block">
+                                                <img src="img/emart24/2.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-block">
+                                                <img src="img/emart24/3.png" class="d-block w-100 " alt="...">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-none d-xl-block">
+                                                <img src="img/emart24/4.png" class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                                <img src="img/emart24/sss.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none d-md-block">
+                                                <img src="img/emart24/5.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-block">
+                                                <img src="img/emart24/6.png" class="d-block w-100 " alt="...">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-none d-xl-block">
+                                                <img src="img/emart24/7.png" class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                                <img src="img/emart24/1.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none d-md-block">
+                                                <img src="img/emart24/2.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-block">
+                                                <img src="img/emart24/3.png" class="d-block w-100 " alt="...">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-none d-xl-block">
+                                                <img src="img/emart24/4.png" class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                                <img src="img/emart24/sss.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none d-md-block">
+                                                <img src="img/emart24/5.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-block">
+                                                <img src="img/emart24/6.png" class="d-block w-100 " alt="...">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-none d-xl-block">
+                                                <img src="img/emart24/7.png" class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                                <img src="img/emart24/1.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none d-md-block">
+                                                <img src="img/emart24/2.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-block">
+                                                <img src="img/emart24/3.png" class="d-block w-100 " alt="...">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-none d-xl-block">
+                                                <img src="img/emart24/4.png" class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                                <img src="img/emart24/sss.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none d-md-block">
+                                                <img src="img/emart24/5.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-block">
+                                                <img src="img/emart24/6.png" class="d-block w-100 " alt="...">
+                                            </div>
+                                            <div
+                                                class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-sm-none  d-md-none d-lg-none d-xl-block">
+                                                <img src="img/emart24/7.png" class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- col-9 -->
             </div>
         </div>
+    </div>
+    <div class="container-fluid mx-0 mt-100">
+        <div class="row">
+            <div class="col-lg-0 col-xl-1"></div>
+            <div class="col-lg-12 col-xl-11 bg-warning radius mx-0 px-5">
+                <h1 class="font-bk-sans pt-100 " id="#nav-item-3">창업 안내</h1>
+                <p>이마트24의 스마트한 창업설계를 받아보세요</p>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4   p-5">
+                        <div class="p-4 bg-white border-radius">
+                            <div class="t">
+                                <h2 class="inline">창업가이드</h2>
+                                <img src="img/emart24/circleArrows.png" width="50px" height=" 50px">
+                            </div>
+                            <p>이마트24는 경영주님과 <br>협력적 가치를 공유합니다.</p>
+                            <img src="img/emart24/idea.png" class="img-fluid rounded">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4   p-5">
+                        <div class="p-4 bg-white border-radius">
+                            <div class="t">
+                                <h2 class="inline">창업설명회</h2>
+                                <img src="img/emart24/circleArrows.png" width="50px" height=" 50px">
+                            </div>
+                            <p>경영주와 함께하는<br>창업 설명회를 신청하세요.</p>
+                            <img src="img/emart24/calenderCoin3d.png" class="img-fluid ">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4   p-5">
+                        <div class="p-4 bg-white border-radius">
+                            <div class="t">
+                                <h2 class="inline">창업 상담</h2>
+                                <img src="img/emart24/circleArrows.png" width="50px" height=" 50px">
+                            </div>
+                            <p>창업 전문 컨설턴트에<br>상담을 받아보세요.</p>
+                            <img src="img/emart24/chatBubble.png" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-10">
+                <h1 class="font-bk-sans" id="#nav-item-2">매장찾기</h1>
+                <form class="inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 inline-block" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <div class="w-100 my-3"></div>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary">24시간</button>
+                        <button type="button" class="btn btn-secondary">택배</button>
+                        <button type="button" class="btn btn-secondary">ATM</button>
+                        <button type="button" class="btn btn-secondary">와인</button>
+                        <button type="button" class="btn btn-secondary">커피</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-2">
+                <img src="img/emart24/mapPin.png" class="img-fluid" width="400">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mx-0 mt-5">
+        <div class="row">
+            <div class="col-lg-12 col-xl-11 bg-light radius-r mx-0 px-5" id="#nav-item-4">
+                <div class="row">
+                    <div class="col">
+                        <img src="img/emart24/mainAppImage.png" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <div class="text-aria">
+                            <p style="color: #ffd15d;">우주 편의점</p>
+                            <h1 class="title">“놀아 버는” 편의점<br>
+                                지구에 없던 FUN의점</h1>
+                            <p class="pb-5 pt-2">자세히 보기 <img src="img/emart24/more.png" width="20px" height="20px">
+                            </p>
+                            <a href="https://abr.ge/0gnlrx"><button type="button" class="btn btn-warning btn-lg mb-3">앱
+                                    다운로드</button></a>
+                            <p>이마트24 신규 앱 다운로드 하세요!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-0 col-xl-1"></div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid">
         <div class="container my-5">
             <div class="row">
-                <div class="col-10">
-                    <h1 class="font-bk-sans">매장찾기</h1>
-                    <form class="inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2 inline-block" type="search" placeholder="Search" aria-label="Search">
-                        <div class="w-100 my-3"></div>
-                        <div class="btn-group" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-secondary">24시간</button>
-                            <button type="button" class="btn btn-secondary">택배</button>
-                            <button type="button" class="btn btn-secondary">ATM</button>
-                            <button type="button" class="btn btn-secondary">와인</button>
-                            <button type="button" class="btn btn-secondary">커피</button>
-                        </div>
-                    </form>
+                <div class="col-3">
+                    <p>이마트24</p>
+                    <h2 class="font-bk-sans">스토리</h2>
                 </div>
-                <div class="col-2">
-                    <img src="img/emart24/mapPin.png" class="img-fluid" width="400">
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid mx-0 mt-5">
-            <div class="row">
-                <div class="col-lg-12 col-xl-11 bg-light radius-r mx-0 px-5">
-                    <div class="row">
-                        <div class="col">
-                            <img src="img/emart24/mainAppImage.png" class="img-fluid">
-                        </div>
-                        <div class="col">
-                            <div class="text-aria">
-                                <p style="color: #ffd15d;">우주 편의점</p>
-                                <h1 class="title">“놀아 버는” 편의점<br>
-                                    지구에 없던 FUN의점</h1>
-                                <p class="pb-5 pt-2">자세히 보기 <img src="img/emart24/more.png" width="20px" height="20px">
-                                </p>
-                                <a href="https://abr.ge/0gnlrx"><button type="button" class="btn btn-warning btn-lg mb-3">앱 다운로드</button></a>
-                                <p>이마트24 신규 앱 다운로드 하세요!</p>
+                <div class="col-9">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="https://www.youtube.com/watch?v=fEt16dqugAo"><img
+                                                src="img/emart24/tn1.png" class="img-fluid img-rrounded">
+                                            <img class="img-circle border" width="60" src="img/emart24/youtube48.png">
+                                            YOUTUBE</a>
+                                    </div>
+                                    <div class="col mt-5">
+                                        <a href="https://www.youtube.com/watch?v=5N2j4jvmWXs"><img
+                                                src="img/emart24/tn2.png" class="img-fluid img-rrounded">
+                                            <img class="img-circle border" width="60" src="img/emart24/youtube48.png">
+                                            YOUTUBE</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="https://www.youtube.com/watch?v=2Zpvk_5UkOs"><img
+                                                src="img/emart24/tn3.png" class="img-fluid img-rrounded">
+                                            <img class="img-circle border" width="60" src="img/emart24/youtube48.png">
+                                            YOUTUBE</a>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="https://www.youtube.com/watch?v=RvV7ae6GfS0"><img
+                                                src="img/emart24/tn4.png" class="img-fluid img-rrounded">
+                                            <img class="img-circle border" width="60" src="img/emart24/youtube48.png">
+                                            YOUTUBE</a>
+                                    </div>
+                                    <div class="col mt-5">
+                                        <a href="https://www.youtube.com/watch?v=x-9otScKzCQ"><img
+                                                src="img/emart24/tn5.png" class="img-fluid img-rrounded">
+                                            <img class="img-circle border" width="60" src="img/emart24/youtube48.png">
+                                            YOUTUBE</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="https://www.youtube.com/watch?v=gbr8SCJZj00"><img
+                                                src="img/emart24/tn6.png" class="img-fluid img-rrounded">
+                                            <img class="img-circle border" width="60" src="img/emart24/youtube48.png">
+                                            YOUTUBE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="https://www.youtube.com/watch?v=5ugIP0YkmEQ"><img
+                                                src="img/emart24/tn7.png" class="img-fluid img-rrounded">
+                                            <img class="img-circle border" width="60" src="img/emart24/youtube48.png">
+                                            YOUTUBE</a>
+                                    </div>
+                                    <div class="col mt-5">
+                                        <a href="https://www.youtube.com/watch?v=efeWx100aEs"><img
+                                                src="img/emart24/tn8.png" class="img-fluid img-rrounded">
+                                            <img class="img-circle border" width="60" src="img/emart24/youtube48.png">
+                                            YOUTUBE</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="https://www.youtube.com/watch?v=pGeY3NSmbJo"><img
+                                                src="img/emart24/tn9.png" class="img-fluid img-rrounded">
+                                            <img class="img-circle border" width="60" src="img/emart24/youtube48.png">
+                                            YOUTUBE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-target="#carouselExampleControls"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-0 col-xl-1"></div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="container my-5">
-                <div class="row">
-                    <div class="col-3">
-                        <p>이마트24</p>
-                        <h2 class="font-bk-sans">스토리</h2>
-                    </div>
-                    <div class="col-9">
-                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col">
-                                            <a href="https://www.youtube.com/watch?v=fEt16dqugAo"><img
-                                                    src="img/emart24/tn1.png"
-                                                    class="img-fluid img-rrounded">
-                                                <img class="img-circle border" width="60" src="img/emart24/youtube48.png" >
-                                            YOUTUBE</a>
-                                        </div>
-                                        <div class="col mt-5">
-                                            <a href="https://www.youtube.com/watch?v=5N2j4jvmWXs"><img
-                                                    src="img/emart24/tn2.png"
-                                                    class="img-fluid img-rrounded">
-                                                <img class="img-circle border" width="60" src="img/emart24/youtube48.png" >
-                                            YOUTUBE</a>
-                                        </div>
-                                        <div class="col">
-                                            <a href="https://www.youtube.com/watch?v=2Zpvk_5UkOs"><img
-                                                    src="img/emart24/tn3.png"
-                                                    class="img-fluid img-rrounded">
-                                                <img class="img-circle border" width="60" src="img/emart24/youtube48.png" >
-                                            YOUTUBE</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col">
-                                            <a href="https://www.youtube.com/watch?v=RvV7ae6GfS0"><img
-                                                    src="img/emart24/tn4.png"
-                                                    class="img-fluid img-rrounded">
-                                                <img class="img-circle border" width="60" src="img/emart24/youtube48.png" >
-                                            YOUTUBE</a>
-                                        </div>
-                                        <div class="col mt-5">
-                                            <a href="https://www.youtube.com/watch?v=x-9otScKzCQ"><img
-                                                    src="img/emart24/tn5.png"
-                                                    class="img-fluid img-rrounded">
-                                                <img class="img-circle border" width="60" src="img/emart24/youtube48.png" >
-                                            YOUTUBE</a>
-                                        </div>
-                                        <div class="col">
-                                            <a href="https://www.youtube.com/watch?v=gbr8SCJZj00"><img
-                                                    src="img/emart24/tn6.png"
-                                                    class="img-fluid img-rrounded">
-                                                <img class="img-circle border" width="60" src="img/emart24/youtube48.png" >
-                                            YOUTUBE</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col">
-                                            <a href="https://www.youtube.com/watch?v=5ugIP0YkmEQ"><img
-                                                    src="img/emart24/tn7.png"
-                                                    class="img-fluid img-rrounded">
-                                                <img class="img-circle border" width="60" src="img/emart24/youtube48.png" >
-                                            YOUTUBE</a>
-                                        </div>
-                                        <div class="col mt-5">
-                                            <a href="https://www.youtube.com/watch?v=efeWx100aEs"><img
-                                                    src="img/emart24/tn8.png"
-                                                    class="img-fluid img-rrounded">
-                                                <img class="img-circle border" width="60" src="img/emart24/youtube48.png" >
-                                            YOUTUBE</a>
-                                        </div>
-                                        <div class="col">
-                                            <a href="https://www.youtube.com/watch?v=pGeY3NSmbJo"><img
-                                                    src="img/emart24/tn9.png"
-                                                    class="img-fluid img-rrounded">
-                                                <img class="img-circle border" width="60" src="img/emart24/youtube48.png" >
-                                            YOUTUBE</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button"
-                                    data-target="#carouselExampleControls" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button"
-                                    data-target="#carouselExampleControls" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- container -->
-                <div class="container-fluid my-5">
-                    <div class="row justify-content-around">
-                        <div class="col-12 col-md-5 shadow round my-4 p-4">
-                            <h4 class="inline">공지사항</h3>
+            </div><!-- container -->
+            <div class="container-fluid my-5">
+                <div class="row justify-content-around">
+                    <div class="col-12 col-md-5 shadow round my-4 p-4">
+                        <h4 class="inline">공지사항</h3>
                             <img src="img/emart24/more.png" class="img-size text-align-right">
                             <ul>
-                                <li class="text-color line-height day text-small"><a href="#">2022년(제 17기) 결산공고</a></li>
-                                <li class="text-color line-height day text-small"><a href="#">개인정보처리방침 개정 안내(2023.02.21)</a></li>
+                                <li class="text-color line-height day text-small"><a href="#">2022년(제 17기) 결산공고</a>
+                                </li>
+                                <li class="text-color line-height day text-small"><a href="#">개인정보처리방침 개정
+                                        안내(2023.02.21)</a></li>
                                 <li class="text-color line-height day text-small"><a href="#">기준일 설정 공고</a></li>
                             </ul>
-                        </div>
-                        <div class="col-12 col-md-5 shadow round my-4 p-4">
-                            <h4 class="inline">보도자료</h3>
+                    </div>
+                    <div class="col-12 col-md-5 shadow round my-4 p-4">
+                        <h4 class="inline">보도자료</h3>
                             <img src="img/emart24/more.png" class="img-size text-align-right">
                             <ul>
-                                <li class="text-color line-height day text-small"><a href="#">이마트25, 대한민국 편의점 최초 싱가포르 진출!</a></li>
-                                <li class="text-color line-height day text-small"><a href="#">이마트24, 혁신적인 모바일앱 우수성 입증! `스마....</a></li>
-                                <li class="text-color line-height day text-small"><a href="#">이마트24 X bhc, `안 사면 손해` 파티팩 한정 판매</a></li>
+                                <li class="text-color line-height day text-small"><a href="#">이마트25, 대한민국 편의점 최초
+                                        싱가포르 진출!</a></li>
+                                <li class="text-color line-height day text-small"><a href="#">이마트24, 혁신적인 모바일앱 우수성
+                                        입증! `...</a></li>
+                                <li class="text-color line-height day text-small"><a href="#">이마트24 X bhc, `안 사면 손해`
+                                        파티팩 한정 판매</a></li>
                             </ul>
-                        </div>
-                    </div><!-- row -->
-                </div><!-- container -->
-            </div>
+                    </div>
+                </div><!-- row -->
+            </div><!-- container -->
         </div>
     </div>
     <div class="container-fluid mt5 footer mx-0">
@@ -862,17 +859,17 @@
             </div>
         </div>
     </div>
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-            crossorigin="anonymous"></script>
-        <script>
-            $('.slide').carousel({
-                interval: 2000
-            });
-        </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script>
+        $('.slide').carousel({
+            interval: 2000
+        });
+    </script>
 </body>
 
 </html>
