@@ -793,6 +793,9 @@
                 </div>
             </div><!-- container -->
             <div class="container-fluid my-5">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dZpxlmCtedY?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <img src="img/emart24/start.jpg" class="btn tac" width="50" height="50">
+		        <img src="img/emart24/end.jpg" class="btn tac" width="50" height="50">
                 <div class="row justify-content-around">
                     <div class="col-12 col-md-5 shadow round my-4 p-4">
                         <h4 class="inline">공지사항</h3>
@@ -870,6 +873,17 @@
         $('.slide').carousel({
             interval: 2000
         });
+        $(function(){
+			 let remotCon = $(".btn")
+			remotCon.eq(0).click(function(){
+				$("#player")[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+			})
+			remotCon.eq(1).click(function(){
+				$("#player")[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+				videoBtn.show();
+				box.show();
+			})
+		})
     </script>
 </body>
 
