@@ -874,16 +874,16 @@
             interval: 2000
         });
         $(function(){
-			 let remotCon = $(".btn")
-			remotCon.eq(0).click(function(){
-				$("#player")[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
-			})
-			remotCon.eq(1).click(function(){
-				$("#player")[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-				videoBtn.show();
-				box.show();
-			})
+		let remotCon = $(".btn")
+		remotCon.eq(0).click(function(){
+			$("#player")[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
 		})
+		remotCon.eq(1).click(function(){
+			$("#player")[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+			videoBtn.show();
+			box.show();
+		})
+	})
     </script>
 </body>
 
