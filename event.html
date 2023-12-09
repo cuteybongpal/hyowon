@@ -344,15 +344,18 @@
         .border-lightgrey {
             border: 1px solid rgb(197, 197, 197);
         }
-        .color-grey{
+
+        .color-grey {
             color: grey;
         }
-        .fz-b{
+
+        .fz-b {
             font-size: 1.5em;
             font-weight: lighter;
             color: rgb(88, 88, 88);
         }
-        .b-radius{
+
+        .b-radius {
             border-radius: 30px;
         }
     </style>
@@ -504,96 +507,144 @@
     <div class="container mt-5">
         <h1 class="font-bk-sans">진행중인 이벤트</h1>
         <p class="color-grey">이마트24의 다양한 이벤트에 참여해보세요.</p>
-        <div class="row">
-            <div class="col-12 col-md-6 p-2">
-                <a href="#">
-                    <img src="img/emart24/event1.png" class="img-fluid b-radius">
-                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
-                    <p class="fz-b">12월 최대 37% 할인쿠폰 이벤트</p>
-                </a>
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            이벤트1
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 col-md-6 p-2">
+                                <a href="#">
+                                    <img src="img/emart24/event1.png" class="img-fluid b-radius">
+                                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
+                                    <p class="fz-b">12월 최대 37% 할인쿠폰 이벤트</p>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 p-2">
+                                <a href="#">
+                                    <img src="img/emart24/event2.png" class="img-fluid b-radius">
+                                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
+                                    <p class="fz-b">12월 페이코 15% 할인</p>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 p-2">
+                                <a href="#">
+                                    <img src="img/emart24/event3.png" class="img-fluid b-radius">
+                                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
+                                    <p class="fz-b">12월 핀다이렉트 이벤트</p>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 p-2">
+                                <a href="#">
+                                    <img src="img/emart24/event4.png" class="img-fluid b-radius">
+                                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
+                                    <p class="fz-b">12월클리어런스 BC 할인 이벤트</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6 p-2">
-                <a href="#">
-                    <img src="img/emart24/event2.png" class="img-fluid b-radius">
-                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
-                    <p class="fz-b">12월 페이코 15% 할인</p>
-                </a>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            이벤트2
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 col-md-6 p-2">
+                                <a href="#">
+                                    <img src="img/emart24/event1.png" class="img-fluid b-radius">
+                                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
+                                    <p class="fz-b">12월 최대 37% 할인쿠폰 이벤트</p>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 p-2">
+                                <a href="#">
+                                    <img src="img/emart24/event2.png" class="img-fluid b-radius">
+                                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
+                                    <p class="fz-b">12월 페이코 15% 할인</p>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 p-2">
+                                <a href="#">
+                                    <img src="img/emart24/event3.png" class="img-fluid b-radius">
+                                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
+                                    <p class="fz-b">12월 핀다이렉트 이벤트</p>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 p-2">
+                                <a href="#">
+                                    <img src="img/emart24/event4.png" class="img-fluid b-radius">
+                                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
+                                    <p class="fz-b">12월클리어런스 BC 할인 이벤트</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6 p-2">
-                <a href="#">
-                    <img src="img/emart24/event3.png" class="img-fluid b-radius">
-                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
-                    <p class="fz-b">12월 핀다이렉트 이벤트</p>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 p-2">
-                <a href="#">
-                    <img src="img/emart24/event4.png" class="img-fluid b-radius">
-                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
-                    <p class="fz-b">12월클리어런스 BC 할인 이벤트</p>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 p-2">
-                <a href="#">
-                    <img src="img/emart24/event1.png" class="img-fluid b-radius">
-                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
-                    <p class="fz-b">12월 최대 37% 할인쿠폰 이벤트</p>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 p-2">
-                <a href="#">
-                    <img src="img/emart24/event2.png" class="img-fluid b-radius">
-                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
-                    <p class="fz-b">12월 페이코 15% 할인</p>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 p-2">
-                <a href="#">
-                    <img src="img/emart24/event3.png" class="img-fluid b-radius">
-                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
-                    <p class="fz-b">12월 핀다이렉트 이벤트</p>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 p-2">
-                <a href="#">
-                    <img src="img/emart24/event4.png" class="img-fluid b-radius">
-                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
-                    <p class="fz-b">12월클리어런스 BC 할인 이벤트</p>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 p-2">
-                <a href="#">
-                    <img src="img/emart24/event1.png" class="img-fluid b-radius">
-                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
-                    <p class="fz-b">12월 최대 37% 할인쿠폰 이벤트</p>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 p-2">
-                <a href="#">
-                    <img src="img/emart24/event2.png" class="img-fluid b-radius">
-                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
-                    <p class="fz-b">12월 페이코 15% 할인</p>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 p-2">
-                <a href="#">
-                    <img src="img/emart24/event3.png" class="img-fluid b-radius">
-                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
-                    <p class="fz-b">12월 핀다이렉트 이벤트</p>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 p-2">
-                <a href="#">
-                    <img src="img/emart24/event4.png" class="img-fluid b-radius">
-                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
-                    <p class="fz-b">12월클리어런스 BC 할인 이벤트</p>
-                </a>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            이벤트3
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 col-md-6 p-2">
+                                <a href="#">
+                                    <img src="img/emart24/event1.png" class="img-fluid b-radius">
+                                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
+                                    <p class="fz-b">12월 최대 37% 할인쿠폰 이벤트</p>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 p-2">
+                                <a href="#">
+                                    <img src="img/emart24/event2.png" class="img-fluid b-radius">
+                                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
+                                    <p class="fz-b">12월 페이코 15% 할인</p>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 p-2">
+                                <a href="#">
+                                    <img src="img/emart24/event3.png" class="img-fluid b-radius">
+                                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
+                                    <p class="fz-b">12월 핀다이렉트 이벤트</p>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 p-2">
+                                <a href="#">
+                                    <img src="img/emart24/event4.png" class="img-fluid b-radius">
+                                    <p class="fz-b">2023.12.04 ~ 2023.12.31</p>
+                                    <p class="fz-b">12월클리어런스 BC 할인 이벤트</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
     </div>
 
-    <div class="container-fluid mt-100 footer mx-0">
+    <div class="container-fluid mt-100 footer mx-0 mb-0">
         <div class="n">
             <div class="text pt-2">
                 <div>
